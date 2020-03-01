@@ -1,0 +1,149 @@
+/* BACK BODY */
+body {
+  background: cornsilk;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* MAIN TOP LOGO */
+header {
+  background: black;
+  color: seashell;
+  background-image: url(images/frontStack.jpg);
+  background-size: 100%;
+  background-position: center;
+  padding: 20px;
+  height: 500px;
+  width: 0 auto;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.vid {
+  width: 0 auto;
+}
+video {
+  width: 100%;
+}
+
+/* NAVIGATIONS */
+header a {
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  background: rgba(0, 0, 0, 0.541);
+  border: 1.5px solid rgb(218, 214, 214);
+  size: 100px;
+  padding: 5px;
+}
+
+header a {
+  background: rgb(0, 0, 0);
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 205px;
+    background-color: rgba(0, 0, 0, 0.575);
+  }
+}
+
+nav ul {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+
+  color: black;
+  padding: 20px;
+  text-transform: uppercase;
+}
+header .mobile {
+  display: none;
+}
+
+/*  RESPONSIVE RULES YT */
+
+@media screen and (max-width: 715px) {
+  header .mobile {
+    display: inline-block;
+  }
+
+  header .desktop {
+    display: none;
+  }
+  header a {
+    background: rgb(0, 0, 0);
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes example {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 11px;
+      background-color: rgba(0, 0, 0, 0.404);
+    }
+  }
+
+  header {
+    height: 230px;
+  }
+}
+
+/* IMAGES */
+.features {
+  background: rgba(255, 153, 0, 0.39);
+  background-repeat: no-repeat;
+
+  color: rgb(83, 74, 77);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.features figure {
+  text-align: center;
+  margin: 20px;
+  width: 500px;
+  text-transform: uppercase;
+}
+
+.features figure img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: rgb(49, 48, 48) 0px 0px 10px;
+  border: 1px solid white;
+}
+
+.figure {
+  border-radius: 500px;
+
+  border: 2.5px solid rgba(160, 136, 71, 0.233);
+}
+
+/* COPYRIGHTS & ADDRESS */
+.copyrights {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 12px;
+  background-position: bottom;
+  padding: 50px 13px 0px 13px;
+}

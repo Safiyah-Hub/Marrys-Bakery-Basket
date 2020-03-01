@@ -1,0 +1,188 @@
+/* BACK BODY */
+body {
+  background: rgba(255, 153, 0, 0.623);
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* MAIN TOP LOGO */
+header {
+  background: black;
+  color: seashell;
+  background-image: url('images/backkk.jpg');
+  background-size: 100%;
+  background-position: center;
+  padding: 20px;
+  height: 500px;
+  width: 0 auto;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+header .logo a {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  top: 75px;
+  position: relative;
+  background-repeat: no-repeat;
+  text-indent: -99999999999999990px;
+  background-image: url('images/Logo\ final.png');
+  background-color: rgba(255, 255, 255, 0.541);
+  background-size: 300px;
+  border-radius: 500px;
+  background-position: center;
+  border: 2.5px solid rgba(160, 136, 71, 0.089);
+}
+
+header .logo a {
+  background-color: rgb(255, 255, 255, 0.541);
+  animation-name: examplelogo;
+  animation-duration: 5s;
+}
+
+@keyframes examplelogo {
+  from {
+    background-color: rgb(0, 0, 0);
+  }
+  to {
+    background-color: rgb(255, 255, 255, 0.541);
+  }
+}
+
+/* NAVIGATIONS */
+header a {
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  background: rgba(0, 0, 0, 0.541);
+  border: 1.5px solid rgb(218, 214, 214);
+  size: 100px;
+  padding: 5px;
+}
+header a {
+  background: rgb(0, 0, 0);
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 205px;
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+}
+
+header .mobile {
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+
+  color: black;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+/*  RESPONSIVE RULES YT */
+
+@media screen and (max-width: 715px) {
+  header .mobile {
+    display: inline-block;
+  }
+
+  header .logo a {
+    display: inline-block;
+    height: 100px;
+    width: 230px;
+    top: -44px;
+    position: relative;
+    background-repeat: no-repeat;
+    text-indent: -99999999999999990px;
+    background-image: url('images/Logo\ final.png');
+    background-color: rgba(255, 255, 255, 0.541);
+    background-size: 200px;
+    border-radius: 400px;
+    background-position: center;
+    border: 2.5px solid rgba(160, 136, 71, 0.089);
+  }
+  header .desktop {
+    display: none;
+  }
+  header a {
+    background: rgb(0, 0, 0);
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes example {
+    from {
+      top: 0px;
+    }
+    to {
+      top: -35px;
+      background-color: rgba(0, 0, 0, 0.404);
+    }
+  }
+
+  header {
+    height: 230px;
+  }
+}
+
+/* IMAGES */
+.features {
+  background-color: cornsilk;
+  color: rgb(83, 74, 77);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.features figure {
+  margin: auto;
+  text-align: center;
+  margin: 20px;
+  width: 500px;
+  text-transform: uppercase;
+}
+
+.features figure img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  box-shadow: rgb(49, 48, 48) 0px 0px 10px;
+  border: 1px solid white;
+  align-items: center;
+}
+
+.figure {
+  border-radius: 500px;
+  border: 2.5px solid rgba(160, 136, 71, 0.233);
+}
+
+/* COPYRIGHTS & ADDRESS */
+.copyrights {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 248, 220, 0.5);
+  text-align: center;
+  font-size: 12px;
+  background-position: bottom;
+  padding: 20px;
+}
